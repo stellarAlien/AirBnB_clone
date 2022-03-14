@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+"""
+create a FileStorage instance for db
+"""
+
+from models.engine.file_storage import FileStorage
+try:
+    storage = Filestorage()
+    storage.reload()
+except ImportError as e:
+    print("file???")
